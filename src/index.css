@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&family=Unica+One&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+ font-family: 'Source Sans Pro', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,161 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  
+}
+.App::before{
+  width: 100%;
+  height: 100vh;
+  content: '';
+  background: url('./Assets/bg.jpg') center center;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left:0;
+
+}
+
+.search-box input{
+  width: 280px;
+  height: 45px;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid rgb(117, 116, 116);
+  background-color: rgba(0,0,0,0.6);
+  Padding-left: 20px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.search-box input::placeholder{
+  color: #979595;
+  font-size: 16px;
+  font-weight: 200;
+ 
+  
+  
+}
+
+.head{
+  position: sticky;
+  width: 100%;
+ height: 70px;
+
+}
+.head h4{
+  padding-top: 20px;
+  color: whitesmoke;
+  font-size: 1.5rem;
+ 
+  
+}
+
+
+h2{
+padding-top: 50px;
+font-size: 3rem;
+font-weight: 600;
+
+}
+h3{
+  font-size: 3.5rem;
+  padding-top: 20px;
+  font-weight: 700;
+}
+h6{
+  font-size: 1.2rem;
+  font-weight:600;
+}
+p{
+  font-size: 1.6rem;
+}
+
+
+
+.container{
+  max-width: 500px;
+  height:480px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 4%;
+  display: flex ;
+  flex-direction: column;
+  
+  background: rgba(147, 242, 4, 0);
+  box-shadow: 0 15px 5px 1px rgba(106, 106, 116, 0.37);
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
+  
+  
+  
+}
+
+.App .top{
+  width: 100%;
+  margin: 1 auto;
+}
+
+.App .description{
+  position: relative;
+  right: -47%;
+  transform: rotate(269deg);
+}
+.App .bottom{
+  width: 90%;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  align-items: center;
+  
+  gap: 2rem;
+  background-color: rgba(0,0,0,0.5);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.bottom h6{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+@media screen and (max-width:600px) {
+  .container{
+    height:480px;
+    top: 10%;
+    
+  }
+
+  .head{
+    padding-top: 100px;
+    width: 100%;
+   height: 70px;
+  
+  }
+
+ 
 }
