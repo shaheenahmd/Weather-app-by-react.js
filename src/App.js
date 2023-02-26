@@ -32,12 +32,14 @@ function App() {
       </div>
       <div className="container">
         <div className="search-box">
-        <input value={location} 
+        
+        <input  value={location} 
         onChange={event=> setLocation(event.target.value)}
         onKeyDown={searchLocation}
         placeholder='Enter the Location'
         type="text"  />
         </div>
+        
         <div className="top">
           <div className="location">
               <h2>{data.name}</h2>
